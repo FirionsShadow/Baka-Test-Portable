@@ -1,0 +1,24 @@
+***********************
+Baka Script Offset Tool
+***********************
+
+--------
+Overview
+--------
+
+This tool is to be used to update the EBOOT.BIN file for Baka & Test Portable (Baka to Test to Shoukanjuu Portable).
+
+When scripts are translated, they are most likely not going to be the same size as the originals. The EBOOT.BIN references the sizes and offsets of each script file contained within the sc.cpk archive. If the sizes and offsets are not correct, the game will crash upon attempting to load the scripts.
+
+This tool updates the EBOOT.BIN file with the proper sizes of the translated script files.
+
+-----
+Usage
+-----
+baka_script_offset_tool <eboot file> <script directory> <output filename>
+
+<eboot file>: The EBOOT file to be used as a base when updating the script offsets & sizes
+
+<script directory>: The directory containing the script files in the game's script format. This directory should NOT contain .txt files!
+
+<output filename>: The path and name of the file to be written to.
